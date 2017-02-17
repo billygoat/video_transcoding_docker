@@ -15,7 +15,7 @@ RUN apt-get update -qq && apt-get install -y \
   handbrake-cli
 
 # Install video_transcoding gem
-RUN gem install video_transcoding -v 0.16.0
+RUN gem install video_transcoding
 
 # Compile tivodecode and tdcat, install to /usr/local/bin/ (pyTivo will be able to find this automatically)
 RUN apt-get install -qy build-essential
